@@ -19,7 +19,7 @@ public class EventAdapter extends BaseAdapter {
 
     public EventAdapter(Context context) {
         this.context = context;
-        eventData = DataService.getEventData();
+        eventData = DataService.getEventData(); // List<Event>
     }
 
     @Override
@@ -38,6 +38,10 @@ public class EventAdapter extends BaseAdapter {
     }
 
     @Override
+    /**
+     *  get view in every line, ListView invoke this function
+     *  position means ith items
+     */
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(
