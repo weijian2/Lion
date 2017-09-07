@@ -9,7 +9,8 @@ import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class MainActivity extends AppCompatActivity implements EventFragment.OnItemSelectListener {
+public class MainActivity extends AppCompatActivity implements EventFragment.OnItemSelectListener,
+        CommentFragment.OnItemSelectListener {
     private EventFragment mListFragment;
     private CommentFragment mGridFragment;
 
@@ -107,4 +108,10 @@ public class MainActivity extends AppCompatActivity implements EventFragment.OnI
     public void onItemSelected(int position) {
         mGridFragment.onItemSelected(position);
     }
+
+    @Override
+    public void onCommentSelected(int position) {
+        mListFragment.onItemSelected(position);
+    }
+
 }
