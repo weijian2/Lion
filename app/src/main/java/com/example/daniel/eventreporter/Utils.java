@@ -13,6 +13,7 @@ import java.security.MessageDigest;
  * this class's function is to to encrypt password
  */
 public class Utils {
+    public static String username= null;
     /**
      *
      * @param input string representation of password
