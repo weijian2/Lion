@@ -1,5 +1,7 @@
 package com.example.daniel.eventreporter;
 
+import android.app.Activity;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,7 +14,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class EventReportActivity extends AppCompatActivity {
+
     private static final String TAG = EventReportActivity.class.getSimpleName();
     private EditText mEditTextLocation;
     private EditText mEditTextTitle;
@@ -20,7 +26,8 @@ public class EventReportActivity extends AppCompatActivity {
     private ImageView mImageViewSend;
     private ImageView mImageViewCamera;
     private DatabaseReference database;
-
+    private LocationTracker mLocationTracker;
+    private Activity mActivity;
 
 
 
@@ -42,6 +49,32 @@ public class EventReportActivity extends AppCompatActivity {
                 String key = uploadEvent();
             }
         });
+
+        // check if GPS enabled
+        mActivity = this;
+        mLocationTracker = new LocationTracker(mActivity);
+        mLocationTracker.getLocation();
+        final double latitude = mLocationTracker.getLatitude();
+        final double longitude = mLocationTracker.getLongitude();
+
+        new AsyncTask<Void, Void, Void>() {
+            private List<String> mAddressList = new ArrayList<String>();
+
+            @Override
+            protected Void doInBackground(Void... urls) {
+                mAddressList = mLocationTracker.getCurrentLocationViaJSON(latitude,longitude);
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(Void input) {
+                if (mAddressList.size() >= 4) {
+                    mEditTextLocation.setText(mAddressList.get(0) + ", " + mAddressList.get(1) +
+                            ", " + mAddressList.get(2) + ", " + mAddressList.get(3));
+                }
+            }
+        }.execute();
+
     }
     private String uploadEvent() {
         String title = mEditTextTitle.getText().toString();
