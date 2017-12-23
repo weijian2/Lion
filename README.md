@@ -24,13 +24,13 @@ git clone https://github.com/weijian2/Lion
 
 ## Screenshots
 login page
-![](https://github.com/weijian2/Lion/raw/master/demoPics/login.png)
+![](https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg)
 main page
-![](https://github.com/weijian2/Lion/raw/master/demoPics/main.png)
+![](https://github.com/weijian2/Lion/raw/master/demoPics/main.jpeg)
 upload image page
-![](https://github.com/weijian2/Lion/raw/master/demoPics/upload.png)
+![](https://github.com/weijian2/Lion/raw/master/demoPics/upload.jpeg)
 post event page
-![](https://github.com/weijian2/Lion/raw/master/demoPics/post.png)
+![](https://github.com/weijian2/Lion/raw/master/demoPics/post.jpeg)
 
 ## Known bugs
 If you find any more bugs, feel free to contact weijian1@andrew.cmu.edu
