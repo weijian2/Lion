@@ -25,16 +25,10 @@ git clone https://github.com/weijian2/Lion
 ## Screenshots
 <p float="left">
   <img src="https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg" width="400" />
-  <img src="https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg" width="400" /> 
-  <img src="https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg" width="400" />
+  <img src="https://github.com/weijian2/Lion/raw/master/demoPics/main.jpeg" width="400" /> 
+  <img src="https://github.com/weijian2/Lion/raw/master/demoPics/upload.jpeg" width="400" />
+  <img src="https://github.com/weijian2/Lion/raw/master/demoPics/post.jpeg" width="400" />
 </p>
-login page
-![](https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg) ![](https://github.com/weijian2/Lion/raw/master/demoPics/main.jpeg)
-
-upload image page
-![](https://github.com/weijian2/Lion/raw/master/demoPics/upload.jpeg)
-post event page
-![](https://github.com/weijian2/Lion/raw/master/demoPics/post.jpeg)
 
 ## Known bugs
 If you find any more bugs, feel free to contact weijian1@andrew.cmu.edu
