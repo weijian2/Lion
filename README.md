@@ -24,9 +24,9 @@ git clone https://github.com/weijian2/Lion
 
 ## Screenshots
 <p float="left">
-  <img src="https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg" width="100" />
-  <img src="https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg" width="100" /> 
-  <img src="https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg" width="100" />
+  <img src="https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg" width="400" />
+  <img src="https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg" width="400" /> 
+  <img src="https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg" width="400" />
 </p>
 login page
 ![](https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg) ![](https://github.com/weijian2/Lion/raw/master/demoPics/main.jpeg)
