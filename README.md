@@ -24,9 +24,8 @@ git clone https://github.com/weijian2/Lion
 
 ## Screenshots
 login page
-![](https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg)
-main page
-![](https://github.com/weijian2/Lion/raw/master/demoPics/main.jpeg)
+![](https://github.com/weijian2/Lion/raw/master/demoPics/login.jpeg) ![](https://github.com/weijian2/Lion/raw/master/demoPics/main.jpeg)
+
 upload image page
 ![](https://github.com/weijian2/Lion/raw/master/demoPics/upload.jpeg)
 post event page
