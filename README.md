@@ -1,6 +1,5 @@
 # Introduction
-
-## Why Lion
+Lion is an Android project, in which user can register account and post events. All users can see your event in main page and can like or comment them.
 
 ## Tech Stack
 * gradle
